@@ -9,9 +9,9 @@ void main() {
 }
 
 enum EmployeeType {
-  swe(450000, 'Software Engineering department'),
-  finance(300000, 'Marketing department'),
-  marketing(250000, 'Finance Department');
+  swe(450000, 'Software Engineer'),
+  finance(300000, 'Marketing Expert'),
+  marketing(250000, 'Finance Expert');
 
   final int salary;
   final String position;
@@ -26,7 +26,7 @@ class Employee {
 
   void fn() {
     print(
-        this.name + "'s salary is ${eType.salary} per anum and he is in ${eType.position}");
+        this.name + "is a ${eType.position} and his salary is \$${eType.salary} per anum");
 
     // switch (type) {
     //   case EmployeeType.swe:
